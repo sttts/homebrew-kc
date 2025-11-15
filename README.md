@@ -6,7 +6,7 @@ This repository hosts the Homebrew tap for [`kc`](https://github.com/sttts/kc). 
 
 ```bash
 brew tap sttts/homebrew-kc
-brew install sttts/homebrew-kc/kc
+brew install --cask sttts/homebrew-kc/kc
 ```
 
 ## Updating the formula
