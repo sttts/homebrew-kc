@@ -3,7 +3,7 @@ cask "kc" do
   name "kc"
   desc "Two-panel Kubernetes TUI built entirely with AI"
   homepage "https://github.com/sttts/kc"
-  version "0.6.1"
+  version "0.6.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "kc" do
   on_macos do
     on_intel do
       url "https://github.com/sttts/kc/releases/download/v#{version}/kc_#{version}_darwin_amd64.tar.gz"
-      sha256 "d13bf6a0a002eb523d38a4afc64ba63c2413d44063bd3cbfab7d32fe9311ef21"
+      sha256 "74a5989b2ac931dcb12e066974bb6b4e81164b07bdc399f71e8251e9d1320ad0"
     end
     on_arm do
       url "https://github.com/sttts/kc/releases/download/v#{version}/kc_#{version}_darwin_arm64.tar.gz"
-      sha256 "a2b2be9b10e7808124dea0f5feb9bea747f4a28de3d36f8243850e4c76b56b75"
+      sha256 "d2e74b2c14a1f907f93c776a7b5260186bc84d427d27d4adeb68e03c38772d59"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sttts/kc/releases/download/v#{version}/kc_#{version}_linux_amd64.tar.gz"
-      sha256 "f00012e6ad098ec19b76a9ab481352e46716f719aa4f7a8601d41ad957412ff2"
+      sha256 "f8237cbbb948072e3887796d4493099850e6000c63787bd8c08959de086ccd87"
     end
     on_arm do
       url "https://github.com/sttts/kc/releases/download/v#{version}/kc_#{version}_linux_arm64.tar.gz"
-      sha256 "42841e184c21ee332855704b5258510d3e8eb6b1f4635979f93a86695c103d70"
+      sha256 "0c1a1e51712b953562af6333f31b22edcc681582013daf8ad46da4ceb5534f7f"
     end
   end
 
