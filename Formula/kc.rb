@@ -5,21 +5,21 @@
 class Kc < Formula
   desc "Two-panel Kubernetes TUI built entirely with AI"
   homepage "https://github.com/sttts/kc"
-  version "0.7.2"
+  version "0.7.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sttts/kc/releases/download/v0.7.2/kc_0.7.2_darwin_amd64.tar.gz"
-      sha256 "c481c4b9995fdc00baf915b775c7c6f3d7256ccea9517063d77fe1e50f093a8b"
+      url "https://github.com/sttts/kc/releases/download/v0.7.3/kc_0.7.3_darwin_amd64.tar.gz"
+      sha256 "218f0f25f7e387cca7c34b21ee2f7fa99ab1b049fcac335fd0c2386bdb6d6ebd"
 
       def install
         bin.install "kc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sttts/kc/releases/download/v0.7.2/kc_0.7.2_darwin_arm64.tar.gz"
-      sha256 "ce96c39fc7f6246cc86dee72404fba6ced54fb36e9d208e6d0f8056849dce853"
+      url "https://github.com/sttts/kc/releases/download/v0.7.3/kc_0.7.3_darwin_arm64.tar.gz"
+      sha256 "27efacc6f4eb9b38da7025db3262a86b7232a1dce7954ce0552ba39ea3d85426"
 
       def install
         bin.install "kc"
@@ -29,15 +29,15 @@ class Kc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sttts/kc/releases/download/v0.7.2/kc_0.7.2_linux_amd64.tar.gz"
-      sha256 "97ab32b5784f7a4dac5f71bba04e2830dd2022e92e2b64276e73b7d2a1d35054"
+      url "https://github.com/sttts/kc/releases/download/v0.7.3/kc_0.7.3_linux_amd64.tar.gz"
+      sha256 "3572b8028124195181870f9fec3d60153c8f1a47d721de24baf1f0095447104a"
       def install
         bin.install "kc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sttts/kc/releases/download/v0.7.2/kc_0.7.2_linux_arm64.tar.gz"
-      sha256 "160b0a993aa7894306d5d0073fd35a912805c21ebefdd1e7b356894f024d9927"
+      url "https://github.com/sttts/kc/releases/download/v0.7.3/kc_0.7.3_linux_arm64.tar.gz"
+      sha256 "73f2b9645d48fac65d5dc07e75363e93948ae68e7176646d5a408e529724f7ea"
       def install
         bin.install "kc"
       end
